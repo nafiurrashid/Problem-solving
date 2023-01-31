@@ -4,9 +4,28 @@
 // For numbers which are Multiples of both three and five prints "FizzBuzz"
 
 function fizzBuzz(num){
+    let result = ''
     for(let i=1; i<=num;i++){
-        console.log(num)
+        //console.log(i)
+        if(i%3===0 && i%5===0){
+            result+='FizzBuzz \n'
+            //console.log("fizzBuzz")
+        }
+        else if(i%3===0){
+            result+='Fizz \n'
+            //console.log("Fizz")
+        }
+        else if(i%5===0){
+            result+='Buzz \n'
+            //console.log("Buzz")
+        }
+        else{
+            //console.log(i)
+            result+= i +"\n"
+        }
     }
+    return result
+    
 }
 
-fizzBuzz(100)
+console.log(fizzBuzz(100))
