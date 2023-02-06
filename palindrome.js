@@ -7,7 +7,7 @@ function palindrome(str){
     //[0-9,A-Z,a-z]
     //check regex documentation for more
     //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet
-    const re = /[\W_]/g
+    //const re = /[\W_]/g
     const NormalizedStr= str.toLowerCase().replace(re,'')
     const reverseStr=NormalizedStr.split('').reverse().join('')
     console.log(reverseStr)
