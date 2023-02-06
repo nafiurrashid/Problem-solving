@@ -7,7 +7,7 @@ function reverseInt(num){
     if (reverseNum.endsWith('-')){
         reverseNum = '-'+reverseNum.slice(0,reverseNum.length-1)
     }
-    console.log(reverseNum)
+    
     return Number(reverseNum)  
 }
 reverseInt(-90)
